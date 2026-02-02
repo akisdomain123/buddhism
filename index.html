@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Theravāda Buddhism — An Overview</title>
+  <meta name="description" content="A clear, beginner-friendly introduction to Theravāda Buddhism: origins, core teachings, practices, monastic life, and key texts." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#121a2b;
+      --text:#eaf0ff;
+      --muted:#b7c3e6;
+      --accent:#7dd3fc;
+      --accent2:#a7f3d0;
+      --line:rgba(234,240,255,.12);
+      --shadow: 0 16px 40px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 10% 0%, rgba(125,211,252,.18), transparent 55%),
+                  radial-gradient(900px 600px at 90% 15%, rgba(167,243,208,.14), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      padding: 56px 18px 18px;
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+    .kicker{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 4px rgba(125,211,252,.12);
+    }
+    h1{
+      font-size: clamp(34px, 4vw, 52px);
+      line-height:1.1;
+      margin: 18px 0 12px;
+      letter-spacing:-0.02em;
+    }
+    .subtitle{
+      max-width: 70ch;
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0 0 22px;
+    }
+    .grid{
+      max-width:1050px;
+      margin: 0 auto;
+      padding: 18px;
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+    }
+    .card{
+      background: rgba(18,26,43,.88);
+      border:1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card .inner{padding:18px 18px}
+    .card h2{
+      margin:0 0 10px;
+      font-size: 22px;
+      letter-spacing:-0.01em;
+    }
+    .card p{margin: 10px 0; color: var(--text)}
+    .muted{color: var(--muted)}
+    .list{
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    .list li{margin: 6px 0}
+    .tagrow{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top: 12px;
+    }
+    .tag{
+      padding: 7px 10px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .toc a{display:block; padding: 8px 0; border-bottom:1px dashed rgba(234,240,255,.14)}
+    .toc a:last-child{border-bottom:none}
+    .callout{
+      border-left: 4px solid var(--accent);
+      background: rgba(125,211,252,.08);
+      padding: 12px 14px;
+      border-radius: 12px;
+      margin-top: 12px;
+      color: var(--muted);
+    }
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 12px;
+    }
+    @media (max-width: 600px){
+      .two-col{grid-template-columns:1fr}
+    }
+    .mini{
+      background: rgba(255,255,255,.03);
+      border:1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 12px;
+    }
+    .mini h3{margin:0 0 6px; font-size: 16px}
+    footer{
+      max-width:1050px;
+      margin: 0 auto;
+      padding: 18px 18px 44px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .hr{
+      height:1px; background: var(--line);
+      margin: 14px 0;
+    }
+    .quote{
+      font-style: italic;
+      color: var(--muted);
+      border-left: 3px solid rgba(167,243,208,.55);
+      padding-left: 12px;
+      margin: 12px 0;
+    }
+    .pill{
+      display:inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size: 12px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="kicker"><span class="dot"></span> Beginner-friendly guide</div>
+    <h1>Theravāda Buddhism</h1>
+    <p class="subtitle">
+      Theravāda (meaning “Teaching of the Elders”) is one of the oldest surviving traditions of Buddhism.
+      It emphasizes understanding the Buddha’s teachings through the earliest scriptures and cultivating
+      wisdom, ethical conduct, and meditation to end suffering.
+    </p>
+  </header>
+
+  <main class="grid">
+    <!-- MAIN CONTENT -->
+    <section class="card">
+      <div class="inner">
+        <h2 id="what">1) What is Theravāda Buddhism?</h2>
+        <p>
+          Theravāda is a major Buddhist tradition that traces its foundations to early Buddhist communities in India.
+          Over time, it became especially prominent in <strong>Sri Lanka</strong> and later spread through much of
+          <strong>Southeast Asia</strong> (including Thailand, Myanmar, Laos, and Cambodia).
+        </p>
+        <p class="callout">
+          In Theravāda, the goal is liberation from suffering by realizing <strong>Nibbāna (Nirvāṇa)</strong> — the
+          end of greed, hatred, and delusion.
+        </p>
+
+        <div class="hr"></div>
+
+        <h2 id="core">2) Core ideas and teachings</h2>
+        <p class="muted">Theravāda teachings are often explained through a few key frameworks:</p>
+        <ul class="list">
+          <li><strong>The Four Noble Truths</strong>: (1) suffering exists, (2) it has causes, (3) it can cease, (4) there is a path to its cessation.</li>
+          <li><strong>The Noble Eightfold Path</strong>: a practical path of wisdom, ethics, and mental training.</li>
+          <li><strong>Three Marks of Existence</strong>: impermanence (<em>anicca</em>), unsatisfactoriness (<em>dukkha</em>), and not-self (<em>anattā</em>).</li>
+          <li><strong>Karma and rebirth</strong>: actions shape future experiences; ethical living supports clarity and well-being.</li>
+        </ul>
+
+        <div class="two-col">
+          <div class="mini">
+            <h3>Wisdom <span class="pill">Paññā</span></h3>
+            <p class="muted">Seeing reality clearly — especially impermanence and not-self — to reduce clinging.</p>
+          </div>
+          <div class="mini">
+            <h3>Ethics <span class="pill">Sīla</span></h3>
+            <p class="muted">Living with care: honesty, non-harming, and restraint support a calm mind.</p>
+          </div>
+          <div class="mini">
+            <h3>Meditation <span class="pill">Samādhi</span></h3>
+            <p class="muted">Training attention and awareness through practices like mindfulness and concentration.</p>
+          </div>
+          <div class="mini">
+            <h3>Compassion <span class="pill">Karuṇā</span></h3>
+            <p class="muted">Cultivating kindness toward all beings; compassion helps loosen self-centered habits.</p>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 id="practice">3) Common practices</h2>
+        <p>
+          Practices vary across cultures, but many Theravāda communities share these approaches:
+        </p>
+        <ul class="list">
+          <li><strong>Mindfulness meditation</strong> (<em>satipaṭṭhāna</em>): observing body, feelings, mind, and mental patterns.</li>
+          <li><strong>Breath meditation</strong> (<em>ānāpānasati</em>): using the breath to develop calm and clear awareness.</li>
+          <li><strong>Loving-kindness</strong> (<em>mettā</em>): intentionally growing goodwill toward yourself and others.</li>
+          <li><strong>Keeping precepts</strong>: ethical guidelines (often five for laypeople) to reduce harm and strengthen integrity.</li>
+          <li><strong>Merit-making</strong>: acts of generosity (dāna), service, and support for monastics and community.</li>
+        </ul>
+
+        <p class="quote">
+          “A mind trained in attention and kindness becomes steadier — and that steadiness makes insight possible.”
+        </p>
+
+        <div class="hr"></div>
+
+        <h2 id="monastic">4) Monastic life and lay life</h2>
+        <p>
+          Theravāda places a strong emphasis on the monastic community (<strong>Sangha</strong>), who traditionally
+          dedicate their lives to study, meditation, and teaching. Laypeople often support monastics through
+          food offerings and community care.
+        </p>
+        <p class="muted">
+          Many lay practitioners also meditate and study deeply — and in many countries there are meditation
+          centers and retreats open to everyone.
+        </p>
+
+        <div class="hr"></div>
+
+        <h2 id="texts">5) Key texts and language</h2>
+        <p>
+          Theravāda is closely associated with the <strong>Pāli Canon</strong> (also called the <em>Tipiṭaka</em>),
+          one of the earliest complete collections of Buddhist scriptures.
+        </p>
+        <ul class="list">
+          <li><strong>Vinaya</strong>: monastic rules and discipline</li>
+          <li><strong>Sutta</strong>: discourses attributed to the Buddha and early disciples</li>
+          <li><strong>Abhidhamma</strong>: systematic analysis of mind and phenomena (a scholastic tradition)</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2 id="today">6) Theravāda today</h2>
+        <p>
+          Today, Theravāda Buddhism is practiced worldwide. Some communities emphasize traditional rituals and temple life,
+          while others highlight meditation retreats and mindfulness practice. Many modern teachers present the teachings
+          in accessible, secular language while staying rooted in early Buddhist principles.
+        </p>
+
+        <div class="tagrow">
+          <span class="tag">Sri Lanka</span>
+          <span class="tag">Thailand</span>
+          <span class="tag">Myanmar</span>
+          <span class="tag">Laos</span>
+          <span class="tag">Cambodia</span>
+          <span class="tag">Global meditation centers</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 id="starter">7) A simple starter routine (10–15 minutes)</h2>
+        <ol class="list">
+          <li><strong>Settle (1 min):</strong> sit comfortably, relax shoulders and jaw.</li>
+          <li><strong>Breath (5–8 min):</strong> notice the breath; when distracted, gently return.</li>
+          <li><strong>Notice impermanence (2–3 min):</strong> observe sensations changing on their own.</li>
+          <li><strong>Mettā (2–3 min):</strong> silently wish: “May I be safe. May I be well. May others be safe and well.”</li>
+        </ol>
+        <p class="muted">
+          Consistency matters more than duration — even a few minutes daily builds momentum.
+        </p>
+      </div>
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="card">
+      <div class="inner">
+        <h2>On this page</h2>
+        <nav class="toc">
+          <a href="#what">What is Theravāda?</a>
+          <a href="#core">Core teachings</a>
+          <a href="#practice">Practices</a>
+          <a href="#monastic">Monastic & lay life</a>
+          <a href="#texts">Key texts</a>
+          <a href="#today">Theravāda today</a>
+          <a href="#starter">Starter routine</a>
+        </nav>
+
+        <div class="hr"></div>
+
+        <h2>Quick glossary</h2>
+        <ul class="list">
+          <li><strong>Dukkha</strong>: suffering / unsatisfactoriness</li>
+          <li><strong>Nibbāna</strong>: liberation; end of craving and confusion</li>
+          <li><strong>Sangha</strong>: community of practitioners (often monastics)</li>
+          <li><strong>Mettā</strong>: loving-kindness</li>
+          <li><strong>Karma</strong>: intentional action and its effects</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2>Try a reflection</h2>
+        <div class="callout">
+          Think of something you’re holding tightly to (a plan, an opinion, a worry).
+          What changes when you remember: “This is impermanent”?
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="hr"></div>
+    <p>
+      <strong>Note:</strong> This page is an educational overview. Different Theravāda communities may emphasize different
+      practices and interpretations, and local culture can shape how Buddhism is expressed.
+    </p>
+    <p>
+      You can customize this page for a school project by adding a timeline, a map, or a “compare traditions” section.
+    </p>
+  </footer>
+</body>
+</html>
